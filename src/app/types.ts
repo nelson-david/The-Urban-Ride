@@ -1,0 +1,42 @@
+import { StaticImageData } from "next/image";
+import { JSX } from "react";
+
+export type ServiceProps = {
+    title: string;
+    icon: JSX.Element;
+    description: string;
+};
+
+export type IconProps = {
+    color?: string;
+    size?: {
+        width: string;
+        height: string;
+    };
+};
+
+export type OfferProps = {
+    title: string;
+    caption: string;
+    image: StaticImageData;
+    wide?: boolean;
+};
+
+export type CarProps = {
+    id: number;
+    name: string;
+    type: string;
+    specs: {
+        range: number;
+        horsepower: number;
+        seats: number;
+    };
+    costPerDay: number;
+    image: string;
+    availability: boolean;
+};
+
+export type TestimonialProps = {
+    name: string;
+    testimony: string;
+};
