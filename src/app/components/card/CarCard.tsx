@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const CarCard = ({ car }: { car: CarProps }) => {
     return (
-        <div className="p-5">
-            <div className="h-[250px] overflow-hidden rounded-3xl cursor-pointer">
+        <div className="sm:p-2 md:p-5">
+            <div className="sm:h-[200px] md:h-[250px] lg:h-[200px] xl:h-[250px] overflow-hidden rounded-3xl sm:rounded-2xl md:rounded-3xl cursor-pointer">
                 <Image
                     src={car.image}
                     alt={car.name}

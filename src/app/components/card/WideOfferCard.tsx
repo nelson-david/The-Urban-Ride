@@ -8,12 +8,12 @@ const WideOfferCard = ({ title, caption }: OfferProps) => {
             <Image
                 src={WideOfferImage}
                 alt="WideOfferImage"
-                className="w-full h-[610px] object-center object-cover"
+                className="w-full h-[350px] sm:h-[400px] md:h-[490px] lg:h-[550px] xl:h-[610px] object-center object-cover"
             />
 
-            <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(rgba(0,0,0,0)_26.21%,rgb(0,0,0)_79.8%,rgb(0,0,0)_100%)] p-10 flex flex-col">
+            <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(rgba(0,0,0,0)_26.21%,rgb(0,0,0)_79.8%,rgb(0,0,0)_100%)] p-8 sm:p-10 flex flex-col">
                 <div className="mt-auto">
-                    <h3 className="text-white uppercase font-roboto-condensed font-black text-4xl tracking-tight leading-tight">
+                    <h3 className="text-white uppercase font-roboto-condensed font-black tracking-tight leading-tight text-[5.6vw] sm:text-[4.7vw] md:text-[4.3vw] lg:text-[2.6vw]">
                         {title}
                     </h3>
                     <p className="text-white font-inter font-semibold tracking-tight text-base mt-2">

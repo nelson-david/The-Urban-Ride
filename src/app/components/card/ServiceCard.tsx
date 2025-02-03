@@ -1,8 +1,9 @@
 import { ServiceProps } from "@/app/types";
+import styles from "@/app/styles/override.module.css";
 
 const ServiceCard = ({ title, icon, description }: ServiceProps) => {
     return (
-        <div className="flex-1 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[400px]">
+        <div className={`flex-1 ${styles.serviceCard}`}>
             <i className="flex justify-center">{icon}</i>
             <h3 className="text-center font-inter font-semibold tracking-tight text-lg mt-5">
                 {title}
