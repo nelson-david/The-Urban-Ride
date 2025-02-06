@@ -23,8 +23,8 @@ export type OfferProps = {
 };
 
 export type CarProps = {
-    id: number;
-    name: string;
+    customID: string;
+    carName: string;
     type: string;
     specs: {
         range: number;
@@ -39,4 +39,13 @@ export type CarProps = {
 export type TestimonialProps = {
     name: string;
     testimony: string;
+};
+
+export type CustomInputProps = {
+    value: string | number;
+    onChange: (data: any) => void;
+    placeholder: string;
+    type?: string;
+    useLabel?: boolean;
+    label?: string;
 };

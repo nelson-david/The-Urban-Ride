@@ -4,11 +4,12 @@ import { OfferProps } from "@/app/types";
 
 const WideOfferCard = ({ title, caption }: OfferProps) => {
     return (
-        <div className="flex-1 relative rounded-3xl overflow-hidden cursor-pointer">
+        <div className="flex-1 relative rounded-3xl overflow-hidden cursor-pointer bg-accentColor">
             <Image
                 src={WideOfferImage}
                 alt="WideOfferImage"
-                className="w-full h-[350px] sm:h-[400px] md:h-[490px] lg:h-[550px] xl:h-[610px] object-center object-cover"
+                className="w-full h-[350px] sm:h-[400px] md:h-[490px] lg:h-[550px] xl:h-[610px] object-center object-cover rounded-2xl"
+                data-aos="zoom-in"
             />
 
             <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(rgba(0,0,0,0)_26.21%,rgb(0,0,0)_79.8%,rgb(0,0,0)_100%)] p-8 sm:p-10 flex flex-col">
@@ -26,3 +27,4 @@ const WideOfferCard = ({ title, caption }: OfferProps) => {
 };
 
 export default WideOfferCard;
+//fortunegodfrey.fg@gmail.com

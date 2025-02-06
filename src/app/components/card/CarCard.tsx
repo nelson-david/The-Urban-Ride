@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const CarCard = ({ car }: { car: CarProps }) => {
     return (
-        <div className="sm:p-2 md:p-5">
+        <div className="sm:p-2 md:p-5" data-aos="zoom-in">
             <div className="sm:h-[200px] md:h-[250px] lg:h-[200px] xl:h-[250px] overflow-hidden rounded-3xl sm:rounded-2xl md:rounded-3xl cursor-pointer">
                 <Image
                     src={car.image}
-                    alt={car.name}
+                    alt={car.carName}
                     width={300}
                     height={250}
                     className="w-[100%] h-[100%] object-cover object-center"
@@ -18,7 +18,7 @@ const CarCard = ({ car }: { car: CarProps }) => {
                 <div className="flex justify-between">
                     <div>
                         <h3 className="font-roboto-condensed font-bold tracking-tight uppercase text-xl">
-                            {car.name}
+                            {car.carName}
                         </h3>
                         <span className="text-right text-gray-600 font-roboto-condensed tracking-tight font-medium text-base opacity-75">
                             {car.type}

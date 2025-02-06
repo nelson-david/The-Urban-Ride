@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
                 hostname: "s1.cdn.autoevolution.com",
                 pathname: "**",
             },
+            {
+                protocol: "https",
+                hostname: "trntlohzskddgnkhavbn.supabase.co",
+                pathname: "**",
+            },
         ],
     },
 };

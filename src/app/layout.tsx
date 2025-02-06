@@ -27,8 +27,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} ${robotoCondensed.className} antialiased`}
+                className={`${inter.variable} ${robotoCondensed.className} antialiased overflow-hidden`}
             >
+                {/* <SaveData data={data} /> */}
                 {children}
             </body>
         </html>
