@@ -1,14 +1,12 @@
 "use client";
 
-import { PropsWithChildren, useCallback, useEffect, useState } from "react";
+import { PropsWithChildren, useEffect } from "react";
 import Navbar from "@/app/components/navigation/Navbar";
 import Footer from "@/app/components/navigation/Footer";
 import Lenis from "@studio-freight/lenis";
 import AOS from "aos";
 
 const PageLayout = ({ children }: PropsWithChildren) => {
-    const [lenis, setLenis] = useState<Lenis | null>(null);
-
     useEffect(() => {
         AOS.init({
             duration: 1000,
