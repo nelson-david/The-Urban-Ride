@@ -9,29 +9,28 @@ import AOS from "aos";
 const PageLayout = ({ children }: PropsWithChildren) => {
     const [lenis, setLenis] = useState<Lenis | null>(null);
 
-    const raf = useCallback(
-        (time: number) => {
-            lenis?.raf(time);
-            requestAnimationFrame(raf);
-        },
-        [lenis]
-    );
-
     useEffect(() => {
         AOS.init({
             duration: 1000,
         });
 
-        if (!lenis) {
-            setLenis(new Lenis());
-        }
+        const lenis = new Lenis({
+            duration: 2,
+            easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            touchMultiplier: 2, // Adjust touch sensitivity
+        });
+
+        const raf = (time: number) => {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
 
         requestAnimationFrame(raf);
 
         return () => {
-            lenis?.destroy();
+            lenis.destroy(); // Cleanup on component unmount
         };
-    }, [lenis, raf]);
+    }, []);
 
     return (
         <div className="pageLayout">
