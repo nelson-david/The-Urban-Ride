@@ -15,7 +15,7 @@ const AdminCarSection = ({ cars }: { cars: CarProps[] }) => {
     }, [cars, setCarData]);
 
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-4 md:gap-6 pt-16">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-4 md:gap-6 sm:pt-8 md:pt-16">
             {carData.map((car: CarProps) => {
                 return <AdminCarCard car={car} key={car.customID} />;
             })}

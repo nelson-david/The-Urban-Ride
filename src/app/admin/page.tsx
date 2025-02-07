@@ -15,9 +15,9 @@ if (error) {
 const Admin = () => {
     return (
         <AdminLayout>
-            <main className="p-10 pb-28">
+            <main className="p-3 sm:p-5 md:p-10 pb-28">
                 <div className="p-12">
-                    <h1 className="text-center font-inter font-semibold lg:text-[1.4vw] tracking-tight ">
+                    <h1 className="text-center font-inter font-semibold tracking-tight text-[4.5vw] sm:text-[23px] md:text-[30px]">
                         The Urban Ride Admin
                     </h1>
                 </div>

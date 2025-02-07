@@ -81,7 +81,7 @@ const EditCarModal = ({ isOpen, setIsOpen, car }: ModalProps) => {
         <AnimatePresence>
             {isOpen && (
                 <motion.div
-                    className="fixed inset-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-[50000] p-7"
+                    className="fixed inset-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-[50000] p-4 sm:p-7"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -91,10 +91,10 @@ const EditCarModal = ({ isOpen, setIsOpen, car }: ModalProps) => {
                         onClick={(e: any) => {
                             e.stopPropagation();
                         }}
-                        className="w-[550px] h-[auto] p-5 pb-10 bg-white block z-[600]"
+                        className="w-full sm:w-[550px] h-[auto] p-5 pb-10 bg-white block z-[600]"
                     >
                         <div className="flex flex-row justify-between align-middle pt-1 pb-2 mb-8">
-                            <h3 className="text-[1.5vw] font-inter tracking-tight font-semibold opacity-75 text-black">
+                            <h3 className="text-[20px] font-inter tracking-tight font-semibold opacity-75 text-black">
                                 Edit Car
                             </h3>
                             <span

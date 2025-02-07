@@ -11,7 +11,7 @@ const CustomInput = ({
     return (
         <div>
             {useLabel && (
-                <label className="font-inter font-semibold opacity-65 text-black text-[0.8vw] tracking-tight">
+                <label className="font-inter font-semibold opacity-65 text-black text-[13px] tracking-tight">
                     {label}
                 </label>
             )}

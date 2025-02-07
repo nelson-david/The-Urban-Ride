@@ -13,7 +13,7 @@ const AdminCarCard = ({ car }: { car: CarProps }) => {
     return (
         <>
             <div className="sm:p-2 md:p-5" data-aos="zoom-in">
-                <div className="sm:h-[200px] md:h-[250px] lg:h-[200px] xl:h-[250px] overflow-hidden rounded-3xl sm:rounded-2xl md:rounded-3xl cursor-pointer">
+                <div className="sm:h-[200px] md:h-[250px] lg:h-[200px] xl:h-[250px] overflow-hidden rounded-2xl md:rounded-3xl cursor-pointer">
                     <Image
                         src={car.image}
                         alt={car.carName}

@@ -44,7 +44,7 @@ const ConfirmDeleteModal = ({ isOpen, setIsOpen, car }: ModalProps) => {
         <AnimatePresence>
             {isOpen && (
                 <motion.div
-                    className="fixed top-0 inset-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-[50000] p-7"
+                    className="fixed top-0 inset-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-[50000] p-4 sm:p-7"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const ConfirmDeleteModal = ({ isOpen, setIsOpen, car }: ModalProps) => {
                         onClick={(e: any) => {
                             e.stopPropagation();
                         }}
-                        className="w-[400px] h-[auto] p-8 pb-10 bg-white block z-[600]"
+                        className="w-[400px] h-[auto] p-6 sm:p-8 sm:pb-10 bg-white block z-[600]"
                     >
                         <div className="content">
                             <div>
